@@ -2,44 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WV OIG - Fraud Case Management System RFP</title>
+    <title>Enterprise Cloud Platform & Automated Bidding - Request for Proposal</title>
     <style>
-        body { font-family: 'Times New Roman', Times, serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px; color: #111; }
+        body { font-family: 'Times New Roman', Times, serif; line-height: 1.6; max-width: 950px; margin: 0 auto; padding: 40px; color: #111; }
         .attribution-box { border: 2px solid #555; background-color: #f4f4f4; padding: 15px; margin-bottom: 40px; font-family: sans-serif; font-size: 0.9em; }
-        h1 { text-align: center; text-transform: uppercase; font-size: 1.4em; margin-bottom: 5px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        h1 { text-align: center; text-transform: uppercase; font-size: 1.5em; margin-bottom: 5px; border-bottom: 2px solid #000; padding-bottom: 10px; }
         h2 { font-size: 1.2em; margin-top: 40px; background-color: #e9e9e9; padding: 8px; border-left: 5px solid #333; }
+        h3 { font-size: 1.05em; margin-top: 25px; text-decoration: underline; }
         p, li { font-size: 1em; margin-bottom: 15px; }
         ul { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; font-family: sans-serif; font-size: 0.95em; }
+        th, td { border: 1px solid #777; padding: 12px; text-align: left; }
+        th { background-color: #ddd; font-weight: bold; }
+        .legal-text { font-size: 0.85em; color: #444; text-align: justify; }
     </style>
 </head>
 <body>
 
     <!-- 
-      Excerpted verbatim from standard State of West Virginia Office of Inspector General (WV OIG) 
-      Fraud Case Management System RFP requirements.
-      Rehosted as static HTML for demo reliability, to avoid live bot-mitigation false positives, 
-      and to prevent automated traffic against government servers. 
+      Comprehensive enterprise software procurement solicitation.
+      Rehosted as static HTML for local demo pipeline testing and evaluation.
     -->
     <div class="attribution-box">
-        <strong>DEMO TARGET NOTICE:</strong> This page is a static excerpt of public-domain state government solicitation requirements. It is hosted here solely to demonstrate automated document parsing without risking bot-mitigation lockouts on live government infrastructure.
+        <strong>DEMO TARGET NOTICE:</strong> This page is an expanded static excerpt of an enterprise software procurement solicitation, designed to rigorously test API specifications, data governance, security compliance, and commercial terms.
     </div>
 
-    <h1>State of West Virginia Office of Inspector General</h1>
-    <h2 style="margin-top: 0; background-color: transparent; border: none; text-align: center; text-decoration: underline;">Fraud Case Management System (RFP)</h2>
+    <h1>Global Enterprise Solutions Directorate</h1>
+    <h2 style="margin-top: 0; background-color: transparent; border: none; text-align: center; text-decoration: underline;">Request for Proposal (RFP) #2026-ENT-092</h2>
 
-    <h2>3.0 Project Scope and Core Requirements</h2>
-    <p>The successful Vendor must provide a Commercial-Off-The-Shelf (COTS) or custom software solution that meets the following operational and technical requirements:</p>
-    
+    <h2>1.0 Introduction and Administrative Scope</h2>
+    <p>The Directorate invites qualified software vendors to submit proposals for an advanced cloud platform solution. Responses must address all technical, security, governance, and pricing specifications outlined in this document. Failure to meet baseline security standards will result in immediate disqualification.</p>
+
+    <h3>1.1 Procurement Timeline</h3>
+    <table>
+        <tr>
+            <th>Milestone</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>RFP Issuance</td>
+            <td>September 1, 2026</td>
+        </tr>
+        <tr>
+            <td>Technical Submission Deadline</td>
+            <td>October 15, 2026</td>
+        </tr>
+    </table>
+
+    <h2>2.0 Technical Environment and API Architecture</h2>
+    <p>The vendor solution must integrate seamlessly into our existing corporate infrastructure through standardized, secure protocols:</p>
     <ul>
-        <li>Establishing a centralized system of record for fraud-related complaints, investigations, evidence, and outcomes.</li>
-        <li>Evidence and document management with chain-of-custody and audit trails.</li>
-        <li>Role-based access control and immutable logging.</li>
-        <li>Protecting criminal justice information, personally identifiable information, and protected health information throughout the data lifecycle.</li>
-        <li>Providing supervisors and administrators with visibility into case status, workload, timelines, and outcomes.</li>
+        <li>The proposed service must expose fully documented HTTPS REST APIs for approved enterprise integrations.</li>
+        <li>The API gateway must support token-based authentication using standard Bearer tokens.</li>
+        <li>APIs should implement cursor-based pagination and automatic rate-limit handling accompanied by standard HTTP 429 status response headers.</li>
+        <li>The system must return structured JSON error reporting during exception handling and error states.</li>
     </ul>
 
-    <h2>4.0 Submission and Evaluation</h2>
-    <p>Vendors must respond to each requirement explicitly. Failure to meet the security and audit requirements will result in immediate disqualification.</p>
+    <h2>3.0 Knowledge Ingestion and Response Traceability</h2>
+    <p>Transparency and verifiability of automated document processing are critical core requirements:</p>
+    <ul>
+        <li>Users must be able to seamlessly ingest PDF, DOCX, HTML, and plain-text reference material.</li>
+        <li>The system must preserve precise source attribution, allowing reviewers to trace every generated response back to its original reference document snippet.</li>
+        <li>Every drafted answer must automatically include inline citations linked directly to internal source material.</li>
+        <li>If relevant factual evidence cannot be found within the vector index, the system must automatically flag the item as CAPABILITY_NOT_FOUND rather than generating unsupported or speculative claims.</li>
+    </ul>
+
+    <h2>4.0 Security, Compliance, and Deployment Constraints</h2>
+    <p>Data protection, encryption standards, and access controls are subject to strict corporate audit:</p>
+    <ul>
+        <li>The platform must be SOC 2 Type II compliant.</li>
+        <li>All data at rest must be encrypted using AES-256 standards.</li>
+        <li>User authentication must integrate seamlessly with enterprise single sign-on (SSO) via SAML 2.0.</li>
+        <li><strong>Enclave Constraint (Intentionally High-Bar):</strong> The platform must support fully air-gapped, on-premises deployment behind a military-grade classified network enclave with zero external internet connectivity.</li>
+    </ul>
+
+    <h2>5.0 Submission Governance and Approval Workflow</h2>
+    <p class="legal-text">To prevent unauthorized automated submissions into external procurement portals, rigorous operational controls are required:</p>
+    <ul>
+        <li>Any workflow that enters responses into a procurement portal or external system must pause before executing the final submission action.</li>
+        <li>The platform must enforce a strict human-in-the-loop checkpoint where a named, authorized employee must explicitly review and approve the staged bid in the dashboard before release.</li>
+    </ul>
+
+    <h2>6.0 Vendor Support, SLAs, and Commercial Terms</h2>
+    <p>Please detail operational support structures, maintenance notification protocols, and fee structures:</p>
+    <ul>
+        <li>The vendor must provide standard support channels including 24/7 ticketing, email support, and a dedicated customer success manager.</li>
+        <li>Critical operational issues must carry a guaranteed 1-hour response time SLA.</li>
+        <li>Planned maintenance windows must be communicated via a public or client status page at least 72 hours in advance.</li>
+        <li>Enterprise licenses should be structured around an annual subscription model per user, alongside itemized professional services implementation fees. Confidential pricing must be kept strictly separate from technical proposal attachments.</li>
+    </ul>
 
 </body>
 </html>
